@@ -10,8 +10,8 @@ tags:
 - Stack Network
 - Microsoft
 - Caching
-created: "2018-03-14"
-modified: "2018-03-14"
+created: "2018-03-21"
+modified: "2018-03-21"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/apis.yaml
 specificationVersion: "0.14"
 apis:
