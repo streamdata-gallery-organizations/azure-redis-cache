@@ -1,9 +1,9 @@
-title: Streamdata Gallery
-url: azure-redis-cache.api.streamdata.gallery
+title: Streamdata Gallery Azure Redis Cache
+url: azure-redis-cache.streamdata.gallery
 tag: Azure Redis Cache
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery-organizations
+github_user: streamdata-gallery
 github_repo: azure-redis-cache
 github_branch: master
 collections:
