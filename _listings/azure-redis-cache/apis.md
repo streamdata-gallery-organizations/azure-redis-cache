@@ -1,32 +1,236 @@
 ---
 name: Azure Redis Cache
+x-slug: azure-redis-cache
 description: Azure Redis Cache is based on the popular open source Redis cache. It
   gives you access to a secure, dedicated Redis cache, managed by Microsoft and accessible
   from any application within Azure.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
 x-kinRank: "10"
 x-alexaRank: ""
-tags:
-- Stack Network
-- Microsoft
-- Caching
-created: "2018-03-25"
-modified: "2018-03-25"
-url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/apis.yaml
+tags: Azure Redis Cache
+created: "2018-05-21"
+modified: "2018-05-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Azure Redis Cache API
-  description: Azure Redis Cache is based on the popular open source Redis cache
+- name: Azure Redis Cache API Operations List
+  x-api-slug: azure-redis-cache-api
+  description: Lists all of the available REST API operations of the Microsoft.Cache
+    provider.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
-  humanURL: ""
-  baseURL: ://management.azure.com//
-  tags:
-  - Stack Network
-  - Microsoft
-  - Caching
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////providers/Microsoft.Cache/operations
+  tags: Operations
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/providersmicrosoftcacheoperations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/providersmicrosoftcacheoperations-get-openapi.md
+- name: Azure Redis Cache API Redis Create
+  x-api-slug: azure-redis-cache-api
+  description: Create or replace (overwrite/recreate, with potential downtime) an
+    existing Redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}
+  tags: Redis
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-cache-redis-name-patchschedules-default-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisname-put-openapi.md
+- name: Azure Redis Cache API Redis Update
+  x-api-slug: azure-redis-cache-api
+  description: Update an existing Redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}
+  tags: Redis
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisname-patch-openapi.md
+- name: Azure Redis Cache API Redis Delete
+  x-api-slug: azure-redis-cache-api
+  description: Deletes a Redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}
+  tags: Redis
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisname-delete-openapi.md
+- name: Azure Redis Cache API Redis Get
+  x-api-slug: azure-redis-cache-api
+  description: Gets a Redis cache (resource description).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}
+  tags: Redis
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisname-get-openapi.md
+- name: Azure Redis Cache API Redis List By Resource Group
+  x-api-slug: azure-redis-cache-api
+  description: Lists all Redis caches in a resource group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/
+  tags: Redis Resource Group
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredis-get-openapi.md
+- name: Azure Redis Cache API Redis List
+  x-api-slug: azure-redis-cache-api
+  description: Gets all Redis caches in the specified subscription.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/providers/Microsoft.Cache/Redis/
+  tags: Redis
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidprovidersmicrosoftcacheredis-get-openapi.md
+- name: Azure Redis Cache API Redis List Keys
+  x-api-slug: azure-redis-cache-api
+  description: Retrieve a Redis cache's access keys. This operation requires write
+    permission to the cache resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/listKeys
+  tags: Redis Keys
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamelistkeys-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamelistkeys-post-openapi.md
+- name: Azure Redis Cache API Redis Regenerate Key
+  x-api-slug: azure-redis-cache-api
+  description: Regenerate Redis cache's access keys. This operation requires write
+    permission to the cache resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/regenerateKey
+  tags: Redis Regenerate Key
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnameregeneratekey-post-openapi.md
+- name: Azure Redis Cache API Redis Force Reboot
+  x-api-slug: azure-redis-cache-api
+  description: Reboot specified Redis node(s). This operation requires write permission
+    to the cache resource. There can be potential data loss.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/forceReboot
+  tags: Redis Force Reboot
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnameforcereboot-post-openapi.md
+- name: Azure Redis Cache API Redis Import Data
+  x-api-slug: azure-redis-cache-api
+  description: Import data into Redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/import
+  tags: Redis Import Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnameimport-post-openapi.md
+- name: Azure Redis Cache API Redis Export Data
+  x-api-slug: azure-redis-cache-api
+  description: Export data from the redis cache to blobs in a container.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/export
+  tags: Redis Export Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnameexport-post-openapi.md
+- name: Azure Redis Cache API Firewall Rules List
+  x-api-slug: azure-redis-cache-api
+  description: Gets all firewall rules in the specified redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{cacheName}/firewallRules
+  tags: Firewall Rules
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacherediscachenamefirewallrules-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacherediscachenamefirewallrules-get-openapi.md
+- name: Azure Redis Cache API Redis Firewall Rule Create Or Update
+  x-api-slug: azure-redis-cache-api
+  description: Create or update a redis cache firewall rule
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{cacheName}/firewallRules/{ruleName}
+  tags: Redis Firewall Rule
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacherediscachenamefirewallrulesrulename-put-openapi.md
+- name: Azure Redis Cache API Redis Firewall Rule Get
+  x-api-slug: azure-redis-cache-api
+  description: Gets a single firewall rule in a specified redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{cacheName}/firewallRules/{ruleName}
+  tags: Redis Firewall Rule
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacherediscachenamefirewallrulesrulename-get-openapi.md
+- name: Azure Redis Cache API Redis Firewall Rule Delete
+  x-api-slug: azure-redis-cache-api
+  description: Deletes a single firewall rule in a specified redis cache.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{cacheName}/firewallRules/{ruleName}
+  tags: Redis Firewall Rule
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacherediscachenamefirewallrulesrulename-delete-openapi.md
+- name: Azure Redis Cache API Patch Schedules Create Or Update
+  x-api-slug: azure-redis-cache-api
+  description: Create or replace the patching schedule for Redis cache (requires Premium
+    SKU).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/patchSchedules/default
+  tags: Schedules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamepatchschedulesdefault-put-openapi.md
+- name: Azure Redis Cache API Patch Schedules Delete
+  x-api-slug: azure-redis-cache-api
+  description: Deletes the patching schedule of a redis cache (requires Premium SKU).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/patchSchedules/default
+  tags: Schedules
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamepatchschedulesdefault-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamepatchschedulesdefault-delete-openapi.md
+- name: Azure Redis Cache API Patch Schedules Get
+  x-api-slug: azure-redis-cache-api
+  description: Gets the patching schedule of a redis cache (requires Premium SKU).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com////subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Cache/Redis/{name}/patchSchedules/default
+  tags: Schedules
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamepatchschedulesdefault-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoftcacheredisnamepatchschedulesdefault-get-openapi.md
+- name: Azure Redis Cache API
+  x-api-slug: azure-redis-cache-api
+  description: Azure Redis Cache is based on the popular open source Redis cache.
+    It gives you access to a secure, dedicated Redis cache, managed by Microsoft and
+    accessible from any application within Azure.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
+  humanURL: https://azure.microsoft.com/en-us/services/cache/
+  baseURL: ://management.azure.com//
+  tags: Azure Redis Cache
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/openapi.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/redis-cache/
