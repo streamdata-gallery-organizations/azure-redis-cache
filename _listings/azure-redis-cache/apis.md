@@ -6,10 +6,10 @@ description: Azure Redis Cache is based on the popular open source Redis cache. 
   from any application within Azure.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-redis-cache-performance.png
 x-kinRank: "10"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: Azure Redis Cache
-created: "2018-05-24"
-modified: "2018-05-24"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-redis-cache/master/_listings/azure-redis-cache/apis.md
 specificationVersion: "0.14"
 apis:
